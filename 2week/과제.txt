@@ -1,0 +1,7 @@
+Custom Model 제작 부분...
+torch.gather
+
+#### -- 이 방식이 작동하는 원리에 대한 심층 공부: http://woongjun-warehouse.tistory.com
+index = torch.arange(2).expand(2,2).reshape(2,1,2)
+output = torch.gather(A, 1, index).squeeze()
+####
