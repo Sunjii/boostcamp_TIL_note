@@ -275,3 +275,9 @@ augmentation + Teacher-Student networks + semi-superivsed laeraning
 - Self-training with noisy student
 
 ![](028.png)
+
+이전의 self-supervised와 유사하다. 먼저 ImageNet 데이터셋을 이용해서 Teacher Model을 학습시킨다. 그리고 300M의 unlabeld data를 티처 모델을 통해 pseudo-labeled data로 만든다.
+
+그리고 ImageNet 1M 데이터 + pseudo-labeled 데이터 300M을 이용해서 Student Model을 학습시킨다. 이 때, RandAugment를 이용해서 더욱 방대한 양으로 학습시킨다. 이후 학습시킨 Student Model을 새로운 Teacher Model로 삼는다. 새로운 티처 모델은 또 다시 새로운 pseudo labeld data를 만들고, 다시 새로운 Student model을 만든다.
+
+즉, 여기서는 Student model이 반복을 함에 따라 점점 커지게 된다. 이러한 구조를 통해 unlabeled data를 잘 활용하는 새로운 방법을 제시했다.
