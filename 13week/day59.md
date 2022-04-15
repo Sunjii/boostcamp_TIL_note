@@ -138,3 +138,18 @@ NER, RE, EL은 기본적으로 비구조화된 텍스트에서 정보를 추출�
 ## 활용
 
 검색 시스템, 챗봇, 구글 핀포인트 등
+
+# 데이터 검수
+
+- 데이터 형식의 정확도
+- 관계 레이블의 정확도
+- 관계 추출 정확도
+
+## 데이터 평가
+
+- 작업자간 일치도 IAA
+  - Fleiss' k (TACRED)
+  - Krippendorff's a(KLUE)
+- 모델 성능 평가
+  - 정밀도, 재현율, F1 score (TACRED)
+  - Micro F1, AUPRC (KLUE)
