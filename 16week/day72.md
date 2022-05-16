@@ -93,3 +93,7 @@ Annotation 단계에서도 bias가 발생할 수 있음을 인지하고 이를 �
 
 - Natural Questions: Supporting evidence가 주어지지 않고, 실제 유저의 질문들을 모아서 dataset을 구성. 이후 anntator들이 답을 하는 과정으로 구축
 - SQuAD: passage가 주어지고 주어진 passage 내에서 질문과 답을 생성한다. 이는 ODQA에는 적합하지 않다. 예를 들어 passgae의 상황과 현재 상황이 다를 수 있기 때문이다.
+
+# 실습
+
+(8강) Reducing Training Bias.ipynb
